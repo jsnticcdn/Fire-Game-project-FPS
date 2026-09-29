@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 0ed52190f1d164a4a8aa17bd06b43c1b
+AssetOrigin:
+  serializedVersion: 1
+  productId: 355690
+  packageName: Advanced First Person Movement System
+  packageVersion: 1.1.0
+  assetPath: Assets/StudiosAZE/Advanced First Person Movement System/Scripts/Movement/States/PlayerSlopeSlideState.cs
+  uploadId: 971918

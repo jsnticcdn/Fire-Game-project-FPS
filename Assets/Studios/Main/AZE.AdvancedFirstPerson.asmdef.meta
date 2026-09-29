@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 6895f23e07418c54895b438c8ef5c367
+AssemblyDefinitionImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 355690
+  packageName: Advanced First Person Movement System
+  packageVersion: 1.1.0
+  assetPath: Assets/StudiosAZE/Advanced First Person Movement System/AZE.AdvancedFirstPerson.asmdef
+  uploadId: 971918

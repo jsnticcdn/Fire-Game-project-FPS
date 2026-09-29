@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 87eced84c17d6704699467ccdf09c57d
+AssetOrigin:
+  serializedVersion: 1
+  productId: 355690
+  packageName: Advanced First Person Movement System
+  packageVersion: 1.1.0
+  assetPath: Assets/StudiosAZE/Advanced First Person Movement System/Scripts/Movement/GroundSensor.cs
+  uploadId: 971918

@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 4e28de6121f9813458cbc8a90a182fc2
+AssetOrigin:
+  serializedVersion: 1
+  productId: 355690
+  packageName: Advanced First Person Movement System
+  packageVersion: 1.1.0
+  assetPath: Assets/StudiosAZE/Advanced First Person Movement System/Scripts/Movement/States/PlayerLocomotionState.cs
+  uploadId: 971918

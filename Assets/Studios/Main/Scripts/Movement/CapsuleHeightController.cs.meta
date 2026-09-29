@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: ef748acd4c6a71c408cb4da6625fa92f
+AssetOrigin:
+  serializedVersion: 1
+  productId: 355690
+  packageName: Advanced First Person Movement System
+  packageVersion: 1.1.0
+  assetPath: Assets/StudiosAZE/Advanced First Person Movement System/Scripts/Movement/CapsuleHeightController.cs
+  uploadId: 971918

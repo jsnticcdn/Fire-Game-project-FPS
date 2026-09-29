@@ -1,0 +1,9 @@
+fileFormatVersion: 2
+guid: 87492e2bd812ea64ca4a9466391ca3f6
+AssetOrigin:
+  serializedVersion: 1
+  productId: 355690
+  packageName: Advanced First Person Movement System
+  packageVersion: 1.1.0
+  assetPath: Assets/StudiosAZE/Advanced First Person Movement System/Scripts/Movement/States/PlayerAirborneState.cs
+  uploadId: 971918
