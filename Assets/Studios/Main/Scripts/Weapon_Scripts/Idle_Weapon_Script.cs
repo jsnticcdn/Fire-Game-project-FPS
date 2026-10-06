@@ -8,18 +8,13 @@ namespace AZE.AdvancedFirstPerson
     public class Idle_Weapon_Script : MonoBehaviour
     {
         public InputAction take_gun;
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         public CinemachineCamera camera;
         public GameObject player;
-=======
-        public CinemachineCamera player;
-
->>>>>>> e10f9595a9d3508e65c74089214b59edfbe71222
-=======
-        public CinemachineCamera player;
-
->>>>>>> e10f9595a9d3508e65c74089214b59edfbe71222
+        
+        
+        
+        
         public float istakingweapon = 0;
 
         public bool isparent = false;
@@ -31,7 +26,7 @@ namespace AZE.AdvancedFirstPerson
         public float wallCheckDistance = 0.5f;
         public float wallOffset = 0.05f;
         public LayerMask wallLayers;
-
+        
         void Start()
         {
             take_gun.Enable();
@@ -43,16 +38,10 @@ namespace AZE.AdvancedFirstPerson
 
             if (isparent)
             {
-<<<<<<< HEAD
-<<<<<<< HEAD
                 //transform.position = player.transform.position + new Vector3(-0.5f, 1.5f, -0.5f);
                 transform.rotation = player.transform.rotation;
                 transform.position = camera.transform.position + new Vector3(1,0,1);
                 transform.parent = player.transform;
-            }
-
-        } 
-=======
                 // Make sure the gun stays attached to the camera
                 if (transform.parent != player.transform)
                 {
@@ -98,10 +87,9 @@ namespace AZE.AdvancedFirstPerson
 
                 // Match the camera's rotation
                 transform.localRotation = Quaternion.identity;
-            }
-        }
->>>>>>> e10f9595a9d3508e65c74089214b59edfbe71222
-=======
+            
+        
+
                 // Make sure the gun stays attached to the camera
                 if (transform.parent != player.transform)
                 {
@@ -109,14 +97,14 @@ namespace AZE.AdvancedFirstPerson
                 }
 
                 // Default gun position
-                Vector3 targetPosition = gunPosition;
+                targetPosition = gunPosition;
 
                 // Check if there is a wall between the camera and the gun
-                Vector3 cameraPosition = player.transform.position;
+                cameraPosition = player.transform.position;
 
-                Vector3 direction = (player.transform.TransformPoint(gunPosition) - cameraPosition).normalized;
+                direction = (player.transform.TransformPoint(gunPosition) - cameraPosition).normalized;
 
-                float distance = Vector3.Distance(
+                distance = Vector3.Distance(
                     cameraPosition,
                     player.transform.TransformPoint(gunPosition)
                 );
@@ -124,7 +112,7 @@ namespace AZE.AdvancedFirstPerson
                 if (Physics.Raycast(
                     cameraPosition,
                     direction,
-                    out RaycastHit hit,
+                    out hit,
                     distance + wallCheckDistance,
                     wallLayers,
                     QueryTriggerInteraction.Ignore))
@@ -147,9 +135,13 @@ namespace AZE.AdvancedFirstPerson
 
                 // Match the camera's rotation
                 transform.localRotation = Quaternion.identity;
+            
             }
+
+        
+
+              
         }
->>>>>>> e10f9595a9d3508e65c74089214b59edfbe71222
 
         private void OnTriggerStay(Collider other)
         {
@@ -164,11 +156,14 @@ namespace AZE.AdvancedFirstPerson
 
                     // Set initial position
                     transform.localPosition = gunPosition;
-
                     // Match camera rotation
                     transform.localRotation = Quaternion.identity;
                 }
             }
+            
+            
+            
+            
         }
     }
 }
