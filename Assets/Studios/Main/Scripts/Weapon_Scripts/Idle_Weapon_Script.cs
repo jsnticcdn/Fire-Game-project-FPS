@@ -9,8 +9,13 @@ namespace AZE.AdvancedFirstPerson
     {
         public InputAction take_gun;
 <<<<<<< HEAD
+<<<<<<< HEAD
         public CinemachineCamera camera;
         public GameObject player;
+=======
+        public CinemachineCamera player;
+
+>>>>>>> e10f9595a9d3508e65c74089214b59edfbe71222
 =======
         public CinemachineCamera player;
 
@@ -39,6 +44,7 @@ namespace AZE.AdvancedFirstPerson
             if (isparent)
             {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 //transform.position = player.transform.position + new Vector3(-0.5f, 1.5f, -0.5f);
                 transform.rotation = player.transform.rotation;
                 transform.position = camera.transform.position + new Vector3(1,0,1);
@@ -46,6 +52,55 @@ namespace AZE.AdvancedFirstPerson
             }
 
         } 
+=======
+                // Make sure the gun stays attached to the camera
+                if (transform.parent != player.transform)
+                {
+                    transform.SetParent(player.transform);
+                }
+
+                // Default gun position
+                Vector3 targetPosition = gunPosition;
+
+                // Check if there is a wall between the camera and the gun
+                Vector3 cameraPosition = player.transform.position;
+
+                Vector3 direction = (player.transform.TransformPoint(gunPosition) - cameraPosition).normalized;
+
+                float distance = Vector3.Distance(
+                    cameraPosition,
+                    player.transform.TransformPoint(gunPosition)
+                );
+
+                if (Physics.Raycast(
+                    cameraPosition,
+                    direction,
+                    out RaycastHit hit,
+                    distance + wallCheckDistance,
+                    wallLayers,
+                    QueryTriggerInteraction.Ignore))
+                {
+                    // Convert the wall hit position into camera local space
+                    Vector3 localHitPoint =
+                        player.transform.InverseTransformPoint(hit.point);
+
+                    // Move the gun toward the camera
+                    targetPosition.z = localHitPoint.z + wallOffset;
+
+                    // Don't let the gun move farther away than its normal position
+                    targetPosition.z = Mathf.Max(
+                        targetPosition.z,
+                        gunPosition.z
+                    );
+                }
+
+                transform.localPosition = targetPosition;
+
+                // Match the camera's rotation
+                transform.localRotation = Quaternion.identity;
+            }
+        }
+>>>>>>> e10f9595a9d3508e65c74089214b59edfbe71222
 =======
                 // Make sure the gun stays attached to the camera
                 if (transform.parent != player.transform)
