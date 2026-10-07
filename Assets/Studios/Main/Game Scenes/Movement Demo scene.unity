@@ -2897,35 +2897,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47458e1c397964842a15b17d99f70116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: AZE.AdvancedFirstPerson::AZE.AdvancedFirstPerson.Idle_Weapon_Script
-  take_gun:
-    m_Name: Take_gun
+  takeGun:
+    m_Name: Take Gun
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 596fd943-4336-406e-844f-e8991bad05e7
+    m_Id: 514d7042-a97b-4495-b2c1-69cc1c15ba3d
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 6459ece7-4f77-40ff-b92c-56e4d198b943
+      m_Id: 81f371fd-0a21-49e3-b3d8-dba9e5451d13
       m_Path: <Keyboard>/f
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Take_gun
+      m_Action: Take Gun
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
   camera: {fileID: 1603489233}
-  player: {fileID: 376678431}
   istakingweapon: 0
   isparent: 0
-  gunPosition: {x: 1.4, y: 1, z: 1.5}
-  rotationy: 0
-  wallCheckDistance: 0.5
-  wallOffset: 0.05
-  wallLayers:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!1 &1463341543
 GameObject:
   m_ObjectHideFlags: 0
@@ -4526,6 +4518,18 @@ PrefabInstance:
     - target: {fileID: 4946517846798201316, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_Name
       value: low poly stylized shotgun015
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_LocalPosition.x
