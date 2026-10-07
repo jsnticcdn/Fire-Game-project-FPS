@@ -20,6 +20,7 @@ namespace AZE.AdvancedFirstPerson
         public float wallCheckDistance = 0.5f;
         public float wallOffset = 0.05f;
         public LayerMask wallLayers;
+        private bool ispickedup = false;
         
         void Start()
         {
@@ -129,7 +130,9 @@ namespace AZE.AdvancedFirstPerson
 
                     // Parent directly to the camera
                     transform.SetParent(camera.transform);
-                    transform.position = camera.transform.position + new  Vector3(1.70f,-0.8f, 2.5f);
+                    transform.position = camera.transform.position + new  Vector3(-1.70f,-0.8f, 1f);
+                    transform.rotation = new Quaternion(0f, 0f, 0f, 0f);
+                    ispickedup = true;
                     // Set initial position
                     //transform.localPosition = gunPosition;
                     // Match camera rotation
