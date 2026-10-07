@@ -2919,6 +2919,13 @@ MonoBehaviour:
   player: {fileID: 376678431}
   istakingweapon: 0
   isparent: 0
+  gunPosition: {x: 1.4, y: 1, z: 1.5}
+  rotationy: 0
+  wallCheckDistance: 0.5
+  wallOffset: 0.05
+  wallLayers:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1463341543
 GameObject:
   m_ObjectHideFlags: 0
@@ -4522,7 +4529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.30186
+      value: -5.97
       objectReference: {fileID: 0}
     - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_LocalPosition.y
