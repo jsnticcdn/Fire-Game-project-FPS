@@ -2918,6 +2918,8 @@ MonoBehaviour:
   camera: {fileID: 1603489233}
   istakingweapon: 0
   isparent: 0
+  gunPosition: {x: 1.7, y: -0.8, z: 2.5}
+  equippedScaleMultiplier: 1.6
 --- !u!1 &1463341543
 GameObject:
   m_ObjectHideFlags: 0
@@ -4521,15 +4523,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_LocalPosition.x
