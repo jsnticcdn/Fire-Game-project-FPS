@@ -926,7 +926,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.349, y: 1.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2810,11 +2810,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8636356709050595471, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.00000004755749
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8636356709050595471, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7071068
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8636356709050595471, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       propertyPath: m_LocalRotation.x
@@ -2822,7 +2822,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8636356709050595471, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.7071068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8636356709050595471, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       propertyPath: m_LocalRotation.z
@@ -2834,7 +2834,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8636356709050595471, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8636356709050595471, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -2897,71 +2897,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47458e1c397964842a15b17d99f70116, type: 3}
   m_Name: 
   m_EditorClassIdentifier: AZE.AdvancedFirstPerson::AZE.AdvancedFirstPerson.Idle_Weapon_Script
-  take_gun:
-    m_Name: Take_gun
+  takeGun:
+    m_Name: Take Gun
     m_Type: 0
     m_ExpectedControlType: 
-    m_Id: 596fd943-4336-406e-844f-e8991bad05e7
+    m_Id: 514d7042-a97b-4495-b2c1-69cc1c15ba3d
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
     - m_Name: 
-      m_Id: 6459ece7-4f77-40ff-b92c-56e4d198b943
+      m_Id: 81f371fd-0a21-49e3-b3d8-dba9e5451d13
       m_Path: <Keyboard>/f
       m_Interactions: 
       m_Processors: 
       m_Groups: 
-      m_Action: Take_gun
+      m_Action: Take Gun
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
   camera: {fileID: 1603489233}
-  player: {fileID: 376678431}
   istakingweapon: 0
   isparent: 0
-  gunPosition: {x: 1.4, y: 1, z: 1.5}
-  rotationy: 0
-  wallCheckDistance: 0.5
-  wallOffset: 0.05
-  wallLayers:
-    serializedVersion: 2
-    m_Bits: 0
---- !u!114 &1425651104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1425651091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fb93ffb0accb5d4fa5a2888cb765887, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  bulletPrefab: {fileID: 2310230697167730238, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
-  camera: {fileID: 2074370840}
-  weapon: {fileID: 1425651091}
-  bulletSpeed: 30
-  bulletrb: {fileID: 9162342564685351763, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
-  Click_Shoot:
-    m_Name: Click_Shoot
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: d549ef51-bb16-471c-943a-8f8cf7dc507c
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings:
-    - m_Name: 
-      m_Id: 93bf2d31-88b0-402c-a278-f6411c87abb0
-      m_Path: <Mouse>/leftButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Click_Shoot
-      m_Flags: 0
-    m_Flags: 0
-    m_Priority: 0
-  did_click_shoot: 0
+  gunPosition: {x: 1.7, y: -0.8, z: 2.5}
+  equippedScaleMultiplier: 1.6
 --- !u!1 &1463341543
 GameObject:
   m_ObjectHideFlags: 0
@@ -3443,7 +3401,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3718711823768013555, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
   m_PrefabInstance: {fileID: 1397395136}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074370840}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
@@ -4564,6 +4522,18 @@ PrefabInstance:
       value: low poly stylized shotgun015
       objectReference: {fileID: 0}
     - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.97
       objectReference: {fileID: 0}
@@ -4610,9 +4580,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4946517846798201316, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1425651098}
-    - targetCorrespondingSourceObject: {fileID: 4946517846798201316, guid: ba0174561474fd04897df5301479e9cb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1425651104}
   m_SourcePrefab: {fileID: 100100000, guid: ba0174561474fd04897df5301479e9cb, type: 3}
 --- !u!1 &2006055905
 GameObject:
@@ -4999,11 +4966,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
   m_Asset: {fileID: -944628639613478452, guid: 0426fcc89d38c0c49a3b9d509d153979, type: 3}
   m_ActionId: 6b444451-8a00-4d00-a97e-f47457f736a8
---- !u!1 &2074370840 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3760198177314414978, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
-  m_PrefabInstance: {fileID: 1397395136}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2110904712
 GameObject:
   m_ObjectHideFlags: 0
