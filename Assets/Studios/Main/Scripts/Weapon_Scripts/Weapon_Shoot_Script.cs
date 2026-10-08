@@ -37,6 +37,7 @@ namespace AZE.AdvancedFirstPerson
         
         }
 
+        
         void weaponshoot()
         {
             
