@@ -3505,7 +3505,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2310230697167730238, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
   camera: {fileID: 1445462743}
   weapon: {fileID: 1866624967}
-  bulletSpeed: 30
+  bulletSpeed: 50
   bulletrb: {fileID: 9162342564685351763, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
   Click_Shoot:
     m_Name: Click_Shoot
