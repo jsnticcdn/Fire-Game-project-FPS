@@ -5,12 +5,12 @@ namespace AZE.AdvancedFirstPerson
 {
     public class BulletController : MonoBehaviour
     {
-       
+       public GameObject bullet;
        
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
-        
+           Destroy(this.gameObject, 5f);
         }
 
         // Update is called once per frame
@@ -23,12 +23,20 @@ namespace AZE.AdvancedFirstPerson
         
         private void OnCollisionEnter(Collision collision)
         {
+            if (collision.gameObject.tag == "Wall")
+            {
+                Destroy(gameObject);
+            }
             
            
         }
 
         private void OnCollisionStay(Collision collision)
         {
+            if (collision.gameObject.tag == "Wall")
+            {
+                Destroy(gameObject);
+            }
 
             
             
@@ -36,7 +44,10 @@ namespace AZE.AdvancedFirstPerson
 
         private void OnCollisionExit(Collision collision)
         {
-            //Destroy(gameObject);
+            if (collision.gameObject.tag == "Wall")
+            {
+                Destroy(gameObject);
+            }
         }
         
     }
