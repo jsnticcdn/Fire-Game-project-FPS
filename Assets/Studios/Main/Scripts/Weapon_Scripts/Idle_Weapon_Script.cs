@@ -1,3 +1,4 @@
+using NUnit.Framework.Constraints;
 using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -14,7 +15,7 @@ namespace AZE.AdvancedFirstPerson
         [Header("Gun Position")]
         public Vector3 gunPosition = new Vector3(1.70f, -0.8f, 2.5f);
         public float equippedScaleMultiplier = 1f;
-
+        public bool pickedup = false;
         Vector3 floorScale;
 
         void Start()
@@ -47,6 +48,7 @@ namespace AZE.AdvancedFirstPerson
             transform.SetParent(camera.transform);
             transform.localPosition = gunPosition;
             transform.localRotation = Quaternion.identity;
+            pickedup = true;
         }
     }
 }
