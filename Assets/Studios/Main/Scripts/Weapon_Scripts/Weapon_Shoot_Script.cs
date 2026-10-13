@@ -14,13 +14,12 @@ namespace AZE.AdvancedFirstPerson
         public InputAction Click_Shoot;
         public float Bullet_lifespan = 1;
         public float did_click_shoot;
-        private Quaternion random_Angle = new Quaternion(Random.Range(0.0f, 10.0f), Random.Range(0.0f,10f), Random.Range(0.0f, 10f), Random.Range(0.0f, 10));
+        private Quaternion random_Angle;
         public Idle_Weapon_Script idlescript;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             Click_Shoot.Enable();
-            random_Angle = new Quaternion(Random.Range(0.0f, 10.0f), Random.Range(0.0f,10f), Random.Range(0.0f, 10f), Random.Range(0.0f, 10));
             
         }
 
@@ -32,8 +31,8 @@ namespace AZE.AdvancedFirstPerson
             {
                 if (idlescript.pickedup == true)
                 {
-                    random_Angle = new Quaternion(Random.Range(0.0f, 10.0f), Random.Range(0.0f,10f), Random.Range(0.0f, 10f), Random.Range(0.0f, 10));
-                    GameObject x=Instantiate(bulletPrefab, weapon.transform.position, camera.transform.rotation * random_Angle);
+                    random_Angle = new Quaternion(Random.Range(0.0f, 90.0f), Random.Range(0.0f,90.0f), Random.Range(0.0f, 90.0f), Random.Range(0.0f, 90));
+                    GameObject x =Instantiate(bulletPrefab, weapon.transform.position, camera.transform.rotation * random_Angle);
                     bulletrb = x.GetComponent<Rigidbody>();
                     bulletrb.linearVelocity = bulletSpeed * camera.transform.forward ;
                     
@@ -58,10 +57,5 @@ namespace AZE.AdvancedFirstPerson
        
 
         
-        void weaponshoot()
-        {
-            
-            
-        }
     }
 }
