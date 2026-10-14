@@ -19,7 +19,7 @@ namespace AZE.AdvancedFirstPerson
         public float fire_rate = 1.0f;
         public float bulletSpeed;
         private float bullet_delay = 0;
-        public float bullets_per_shot = 5;
+        public int bullets_per_shot = 5;
         public float[] Angle_Spread_Range = { 0, 360, 0,360,0,360,0,360 };
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -33,27 +33,20 @@ namespace AZE.AdvancedFirstPerson
         {
             bullet_delay += Time.deltaTime;
             did_click_shoot = Click_Shoot.ReadValue<float>();
+            
+ 
+        }
+
+        void FixedUpdate()
+        {
             if (bullet_delay > fire_rate)
             {
-                if (did_click_shoot>0)
+                if (did_click_shoot > 0)
                 {
                     if (idlescript.pickedup == true)
                     {
 
-                        for (int i = 0; i < bullets_per_shot; i++)
-                        {
-                            Angle_Spread = new Quaternion(
-                                Random.Range(Angle_Spread_Range[0], Angle_Spread_Range[1]), 
-                                Random.Range(Angle_Spread_Range[2], Angle_Spread_Range[3]),
-                                Random.Range(Angle_Spread_Range[4], Angle_Spread_Range[5]), 
-                                Random.Range(Angle_Spread_Range[6], Angle_Spread_Range[7]));
-                            
-                            GameObject x =Instantiate(bulletPrefab, weapon.transform.position, camera.transform.rotation * Angle_Spread);
-                            bulletrb = x.GetComponent<Rigidbody>();
-                            bulletrb.linearVelocity = bulletSpeed * camera.transform.forward ;
-                            
-                            
-                        }
+                        Shoot();
                         bullet_delay = 0;
 
                     }
@@ -63,16 +56,26 @@ namespace AZE.AdvancedFirstPerson
                 
             }
             
-            
-            else
-            {
-                return;
-            }
-        
         }
-       
-       
-
         
+        void Shoot()
+        {
+            for (int i = 0; i < bullets_per_shot; i++)
+            {
+                Angle_Spread = new Quaternion(
+                    Random.Range(Angle_Spread_Range[0], Angle_Spread_Range[1]), 
+                    Random.Range(Angle_Spread_Range[2], Angle_Spread_Range[3]),
+                    Random.Range(Angle_Spread_Range[4], Angle_Spread_Range[5]), 
+                    Random.Range(Angle_Spread_Range[6], Angle_Spread_Range[7]));
+                            
+                GameObject x =Instantiate(bulletPrefab, weapon.transform.position, camera.transform.rotation * Angle_Spread);
+                bulletrb = x.GetComponent<Rigidbody>();
+                bulletrb.linearVelocity = bulletSpeed * camera.transform.forward ;
+                            
+                            
+            }
+            bullet_delay = 0;
+            
+        }
     }
 }
