@@ -13,7 +13,11 @@ namespace AZE.AdvancedFirstPerson
         public Rigidbody bulletrb;
         public InputAction Click_Shoot;
         public float did_click_shoot;
+<<<<<<< Updated upstream
         private Quaternion random_Angle;
+=======
+        Quaternion random_Angle;
+>>>>>>> Stashed changes
         public Idle_Weapon_Script idlescript;
 
         private float fire_rate = 1.0f;
@@ -23,6 +27,10 @@ namespace AZE.AdvancedFirstPerson
         void Start()
         {
             Click_Shoot.Enable();
+<<<<<<< Updated upstream
+=======
+            
+>>>>>>> Stashed changes
             
         }
 
