@@ -49,7 +49,6 @@ namespace AZE.AdvancedFirstPerson
             transform.localPosition = gunPosition;
             transform.localRotation = Quaternion.identity;
             pickedup = true;
-            
         }
     }
 }
