@@ -319,7 +319,7 @@ MonoBehaviour:
   isparent: 0
   gunPosition: {x: 1.7, y: -0.8, z: 2.5}
   equippedScaleMultiplier: 1
-  pickedup: 1
+  pickedup: 0
 --- !u!1 &139373264
 GameObject:
   m_ObjectHideFlags: 0
