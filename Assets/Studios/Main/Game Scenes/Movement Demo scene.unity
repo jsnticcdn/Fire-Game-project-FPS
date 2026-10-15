@@ -231,6 +231,87 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87560067}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &123405381 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5626514497817110934, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+  m_PrefabInstance: {fileID: 543746749}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &123405385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123405381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb93ffb0accb5d4fa5a2888cb765887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AZE.AdvancedFirstPerson::AZE.AdvancedFirstPerson.Weapon_Shoot_Script
+  bulletPrefab: {fileID: 2310230697167730238, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
+  camera: {fileID: 1445462743}
+  weapon: {fileID: 543746750}
+  bulletrb: {fileID: 9162342564685351763, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
+  Click_Shoot:
+    m_Name: Click_Shoot
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 4ad65111-5d55-4032-9b95-32f05e0c15c4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+    m_Priority: 0
+  idlescript: {fileID: 123405386}
+  Angle_Spread: {x: 0, y: 0, z: 0, w: 0}
+  fire_rate: 0.5
+  bulletSpeed: 50
+  bullets_per_shot: 5
+  Angle_Spread_Range:
+  - 0
+  - 360
+  - 0
+  - 360
+  - 0
+  - 360
+  - 0
+  - 360
+--- !u!114 &123405386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123405381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47458e1c397964842a15b17d99f70116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AZE.AdvancedFirstPerson::AZE.AdvancedFirstPerson.Idle_Weapon_Script
+  takeGun:
+    m_Name: Take Gun
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 81207785-dbd1-403e-9b88-18cb25666206
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 7ddbafd8-f35b-463d-ba7e-5f7d41956afa
+      m_Path: <Keyboard>/f
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Take Gun
+      m_Flags: 0
+    m_Flags: 0
+    m_Priority: 0
+  camera: {fileID: 1603489233}
+  istakingweapon: 0
+  isparent: 0
+  gunPosition: {x: 1.7, y: -0.8, z: 2.5}
+  equippedScaleMultiplier: 1
+  pickedup: 1
 --- !u!1 &139373264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1822,6 +1903,78 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521301126}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &543746749
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3783035514907855068, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_Name
+      value: Aim_point
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.462839
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.26262692
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.8666286
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5626514497817110934, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_Name
+      value: low poly stylized shotgun006
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5626514497817110934, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 123405386}
+    - targetCorrespondingSourceObject: {fileID: 5626514497817110934, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 123405385}
+  m_SourcePrefab: {fileID: 100100000, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+--- !u!1 &543746750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3783035514907855068, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+  m_PrefabInstance: {fileID: 543746749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &557519897
 GameObject:
   m_ObjectHideFlags: 0
@@ -3528,7 +3681,7 @@ MonoBehaviour:
   Angle_Spread: {x: 0, y: 0, z: 0, w: 0}
   fire_rate: 0.5
   bulletSpeed: 50
-  bullet_rate: 5
+  bullets_per_shot: 5
   Angle_Spread_Range:
   - 0
   - 360
@@ -5844,3 +5997,4 @@ SceneRoots:
   - {fileID: 1138951275}
   - {fileID: 458496689}
   - {fileID: 1990806694}
+  - {fileID: 543746749}
