@@ -3714,7 +3714,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9159471293141378096, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       propertyPath: SprintForwardOnly
-      value: 1
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9159471293141378096, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
