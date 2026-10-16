@@ -250,7 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: AZE.AdvancedFirstPerson::AZE.AdvancedFirstPerson.Weapon_Shoot_Script
   bulletPrefab: {fileID: 2310230697167730238, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
   camera: {fileID: 1445462743}
-  weapon: {fileID: 543746750}
+  weapon: {fileID: 0}
   bulletrb: {fileID: 9162342564685351763, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
   Click_Shoot:
     m_Name: Click_Shoot
@@ -1986,11 +1986,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 123405385}
   m_SourcePrefab: {fileID: 100100000, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
---- !u!1 &543746750 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3783035514907855068, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
-  m_PrefabInstance: {fileID: 543746749}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &557519897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2691,6 +2686,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 341487208}
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+--- !u!1001 &902622193
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6344612964349441012, guid: 6bb72f8fa50f23842a690a519e7fdd08, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.478
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344612964349441012, guid: 6bb72f8fa50f23842a690a519e7fdd08, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.77329
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344612964349441012, guid: 6bb72f8fa50f23842a690a519e7fdd08, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.37011
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344612964349441012, guid: 6bb72f8fa50f23842a690a519e7fdd08, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344612964349441012, guid: 6bb72f8fa50f23842a690a519e7fdd08, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344612964349441012, guid: 6bb72f8fa50f23842a690a519e7fdd08, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344612964349441012, guid: 6bb72f8fa50f23842a690a519e7fdd08, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344612964349441012, guid: 6bb72f8fa50f23842a690a519e7fdd08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344612964349441012, guid: 6bb72f8fa50f23842a690a519e7fdd08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344612964349441012, guid: 6bb72f8fa50f23842a690a519e7fdd08, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6344612964349603796, guid: 6bb72f8fa50f23842a690a519e7fdd08, type: 3}
+      propertyPath: m_Name
+      value: Drone
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6bb72f8fa50f23842a690a519e7fdd08, type: 3}
 --- !u!1 &930671058
 GameObject:
   m_ObjectHideFlags: 0
@@ -6019,3 +6071,4 @@ SceneRoots:
   - {fileID: 458496689}
   - {fileID: 1990806694}
   - {fileID: 543746749}
+  - {fileID: 902622193}
