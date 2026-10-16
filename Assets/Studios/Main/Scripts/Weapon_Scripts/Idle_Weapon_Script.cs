@@ -33,6 +33,7 @@ namespace AZE.AdvancedFirstPerson
                 transform.localPosition = gunPosition;
                 transform.localScale = floorScale * equippedScaleMultiplier;
             }
+            
         }
 
         private void OnTriggerStay(Collider other)
