@@ -38,10 +38,7 @@ namespace AZE.AdvancedFirstPerson
 
         private void OnTriggerStay(Collider other)
         {
-            if (isparent)
-                return;
-            if (!other.CompareTag("Player"))
-                return;
+            
             if (istakingweapon <= 0)
                 return;
 
