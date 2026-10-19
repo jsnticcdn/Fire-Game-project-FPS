@@ -17,7 +17,7 @@ namespace AZE.AdvancedFirstPerson
         public float equippedScaleMultiplier = 1f;
         public bool pickedup = false;
         Vector3 floorScale;
-
+        
         void Start()
         {
             takeGun.Enable();
@@ -38,15 +38,23 @@ namespace AZE.AdvancedFirstPerson
 
         private void OnTriggerStay(Collider other)
         {
-            
-            if (istakingweapon <= 0)
-                return;
 
-            isparent = true;
-            transform.SetParent(camera.transform);
-            transform.localPosition = gunPosition;
-            transform.localRotation = Quaternion.identity;
-            pickedup = true;
+            if (istakingweapon > 0)
+            {
+                isparent = true;
+                transform.SetParent(camera.transform);
+                transform.localPosition = gunPosition;
+                transform.localRotation = Quaternion.identity;
+                pickedup = true;
+                
+            }
+           
+           
+           
+               
+
+            
+            
         }
     }
 }

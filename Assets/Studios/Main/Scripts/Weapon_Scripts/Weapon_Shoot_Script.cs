@@ -16,11 +16,14 @@ namespace AZE.AdvancedFirstPerson
         
         public Quaternion Angle_Spread;
         private float did_click_shoot;
-        public float fire_rate = 1.0f;
+
+
+
         public float bulletSpeed;
+        public float fire_rate = 1.0f;
         private float bullet_delay = 0;
         public int bullets_per_shot = 5;
-        public float[] Angle_Spread_Range = { 0, 360, 0,360,0,360,0,360 };
+        public float[] Angle_Spread_Range = { 0, 360, 0, 360, 0, 360, 0, 360 };
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {

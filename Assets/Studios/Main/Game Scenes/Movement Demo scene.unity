@@ -250,7 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: AZE.AdvancedFirstPerson::AZE.AdvancedFirstPerson.Weapon_Shoot_Script
   bulletPrefab: {fileID: 2310230697167730238, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
   camera: {fileID: 1445462743}
-  weapon: {fileID: 0}
+  weapon: {fileID: 543746750}
   bulletrb: {fileID: 9162342564685351763, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
   Click_Shoot:
     m_Name: Click_Shoot
@@ -272,8 +272,8 @@ MonoBehaviour:
     m_Priority: 0
   idlescript: {fileID: 123405386}
   Angle_Spread: {x: 0, y: 0, z: 0, w: 0}
+  bulletSpeed: 60
   fire_rate: 0.5
-  bulletSpeed: 50
   bullets_per_shot: 5
   Angle_Spread_Range:
   - 0
@@ -320,6 +320,20 @@ MonoBehaviour:
   gunPosition: {x: 1.7, y: -0.8, z: 2.5}
   equippedScaleMultiplier: 1
   pickedup: 0
+  weapon_pickup_count: 0
+--- !u!114 &123405392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123405381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a327a24bbf1851446aeec6d11350b7a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AZE.AdvancedFirstPerson::AZE.AdvancedFirstPerson.Multi_Weapon_Check
+  WeaponScript: {fileID: 123405386}
 --- !u!1 &139373264
 GameObject:
   m_ObjectHideFlags: 0
@@ -1985,7 +1999,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5626514497817110934, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
       insertIndex: -1
       addedObject: {fileID: 123405385}
+    - targetCorrespondingSourceObject: {fileID: 5626514497817110934, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 123405392}
   m_SourcePrefab: {fileID: 100100000, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+--- !u!1 &543746750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8383867057432339663, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+  m_PrefabInstance: {fileID: 543746749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &557519897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2442,11 +2464,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IsGlobal: 1
-  priority: 0
-  blendDistance: 0
-  weight: 1
-  sharedProfile: {fileID: 0}
 --- !u!4 &832575519
 Transform:
   m_ObjectHideFlags: 0
@@ -3711,6 +3728,7 @@ MonoBehaviour:
   gunPosition: {x: 1.7, y: -0.8, z: 2.5}
   equippedScaleMultiplier: 1.6
   pickedup: 0
+  weapon_pickup_count: 0
 --- !u!4 &1425651103 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
@@ -3752,8 +3770,8 @@ MonoBehaviour:
     m_Priority: 0
   idlescript: {fileID: 1425651098}
   Angle_Spread: {x: 0, y: 0, z: 0, w: 0}
+  bulletSpeed: 60
   fire_rate: 0.5
-  bulletSpeed: 50
   bullets_per_shot: 5
   Angle_Spread_Range:
   - 0
@@ -3764,6 +3782,19 @@ MonoBehaviour:
   - 360
   - 0
   - 360
+--- !u!114 &1425651109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425651091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a327a24bbf1851446aeec6d11350b7a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AZE.AdvancedFirstPerson::AZE.AdvancedFirstPerson.Multi_Weapon_Check
+  WeaponScript: {fileID: 1425651098}
 --- !u!1 &1445462743 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3760198177314414978, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
@@ -5547,6 +5578,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4946517846798201316, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1425651104}
+    - targetCorrespondingSourceObject: {fileID: 4946517846798201316, guid: ba0174561474fd04897df5301479e9cb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1425651109}
   m_SourcePrefab: {fileID: 100100000, guid: ba0174561474fd04897df5301479e9cb, type: 3}
 --- !u!1 &2006055905
 GameObject:
