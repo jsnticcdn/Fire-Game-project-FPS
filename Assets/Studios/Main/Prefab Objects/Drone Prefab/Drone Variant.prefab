@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Drone Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 7313125982619325743, guid: 6bb72f8fa50f23842a690a519e7fdd08, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 5403337897654812567, guid: c2cfa8bb94de1114d982bb20bc91f1e9, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -97,7 +101,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3

@@ -1,0 +1,191 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &2264609958225153424
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1624232377442792421, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3783035514907855068, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_Name
+      value: Aim_point
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -8.462839
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.26262692
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.8666286
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4998632251866034988, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5626514497817110934, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_Name
+      value: low poly stylized shotgun006 Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172051981531996713, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.3884
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5626514497817110934, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9159335699618922577}
+    - targetCorrespondingSourceObject: {fileID: 5626514497817110934, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9035297767418865060}
+  m_SourcePrefab: {fileID: 100100000, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+--- !u!1 &5870697073185907718 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5626514497817110934, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+  m_PrefabInstance: {fileID: 2264609958225153424}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9159335699618922577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5870697073185907718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47458e1c397964842a15b17d99f70116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AZE.AdvancedFirstPerson::AZE.AdvancedFirstPerson.Idle_Weapon_Script
+  takeGun:
+    m_Name: Take Gun
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 81207785-dbd1-403e-9b88-18cb25666206
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 7ddbafd8-f35b-463d-ba7e-5f7d41956afa
+      m_Path: <Keyboard>/f
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Take Gun
+      m_Flags: 0
+    m_Flags: 0
+    m_Priority: 0
+  istakingweapon: 0
+  unequip:
+    m_Name: Unequip
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: ab4ad2eb-d7f8-4bc7-b4ae-0084525aa1d7
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 4f92e324-05e7-48a3-b2d9-255ac31cb6e3
+      m_Path: <Keyboard>/v
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Unequip
+      m_Flags: 0
+    m_Flags: 0
+    m_Priority: 0
+  isremovingweapon: 0
+  camera: {fileID: 0}
+  isparent: 0
+  Weapon_Cap_Check: {fileID: 0}
+  gunPosition: {x: 1.7, y: -0.8, z: 2.5}
+  equippedScaleMultiplier: 1
+  pickedup: 0
+--- !u!114 &9035297767418865060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5870697073185907718}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1fb93ffb0accb5d4fa5a2888cb765887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AZE.AdvancedFirstPerson::AZE.AdvancedFirstPerson.Weapon_Shoot_Script
+  bulletPrefab: {fileID: 2310230697167730238, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
+  camera: {fileID: 0}
+  weapon: {fileID: 7725072392724687199}
+  bulletrb: {fileID: 9162342564685351763, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
+  Click_Shoot:
+    m_Name: Click_Shoot
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 4ad65111-5d55-4032-9b95-32f05e0c15c4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 45f7c0cb-a749-424f-97d6-aec992d9303d
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Click_Shoot
+      m_Flags: 0
+    m_Flags: 0
+    m_Priority: 0
+  idlescript: {fileID: 9159335699618922577}
+  Angle_Spread: {x: 0, y: 0, z: 0, w: 0}
+  bulletSpeed: 60
+  fire_rate: 0.5
+  bullets_per_shot: 5
+  Angle_Spread_Range:
+  - 0
+  - 360
+  - 0
+  - 360
+  - 0
+  - 360
+  - 0
+  - 360
+--- !u!1 &7725072392724687199 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8383867057432339663, guid: 03f52c167b147774f89c1d07fb465318, type: 3}
+  m_PrefabInstance: {fileID: 2264609958225153424}
+  m_PrefabAsset: {fileID: 0}

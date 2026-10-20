@@ -95,20 +95,20 @@ namespace AZE.AdvancedFirstPerson.Studios.Main.Scripts.Shared
             }
         }
         
+        
 
-
-        private void OnCollisionEnter(Collision collision)
+        private void OnTriggerEnter(Collider other)
         {
-            if (collision.gameObject.tag == "Bullet")
+            if (other.gameObject.tag == "Enemy_Bullet")
             {
                 if (maxHealth <= 0)
                 {
                     HandleDeath();
-                    Destroy(collision.gameObject);
+                    Destroy(other.gameObject);
                 }
                 else
                 {
-                    TakeDamage(10f, collision.gameObject);
+                    TakeDamage(10f, other.gameObject);
                     maxHealth -= 10f;
                    
                     
@@ -116,5 +116,6 @@ namespace AZE.AdvancedFirstPerson.Studios.Main.Scripts.Shared
                 
             }
         }
+        
     }
 }
