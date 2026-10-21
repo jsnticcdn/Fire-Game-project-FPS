@@ -99,7 +99,7 @@ namespace AZE.AdvancedFirstPerson.Studios.Main.Scripts.Shared
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.gameObject.tag == "Enemy_Bullet")
+            if (other.CompareTag("Bullet"))
             {
                 if (maxHealth <= 0)
                 {

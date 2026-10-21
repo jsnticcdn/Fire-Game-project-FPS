@@ -22,11 +22,13 @@ namespace AZE.AdvancedFirstPerson
         private void FixedUpdate()
         {
             time += Time.deltaTime;
-            if (time > 3)
+            if (time > 1)
             {
                 time = 0;
                 Destroy(gameObject);
             }
         }
+
+        
     }
 }
