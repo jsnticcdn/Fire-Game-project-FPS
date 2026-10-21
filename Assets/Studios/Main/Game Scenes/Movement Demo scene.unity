@@ -3001,7 +3001,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1890999829041139612, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1890999829041139612, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       propertyPath: m_Materials.Array.size
@@ -4009,6 +4009,14 @@ PrefabInstance:
       propertyPath: camera
       value: 
       objectReference: {fileID: 1445462743}
+    - target: {fileID: 6272574694138890215, guid: 18ed34909a5963549818588ec1469d5e, type: 3}
+      propertyPath: bulletSpeed
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272574694138890215, guid: 18ed34909a5963549818588ec1469d5e, type: 3}
+      propertyPath: bullets_per_shot
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 6272574694138890215, guid: 18ed34909a5963549818588ec1469d5e, type: 3}
       propertyPath: 'Angle_Spread_Range.Array.data[0]'
       value: -100
