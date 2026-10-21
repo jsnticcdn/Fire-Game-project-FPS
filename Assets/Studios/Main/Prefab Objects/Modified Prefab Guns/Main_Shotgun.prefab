@@ -122,7 +122,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4946517846798201316, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_Name
-      value: low poly stylized shotgun015 Variant
+      value: Main_Shotgun
+      objectReference: {fileID: 0}
+    - target: {fileID: 4946517846798201316, guid: ba0174561474fd04897df5301479e9cb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_LocalScale.x

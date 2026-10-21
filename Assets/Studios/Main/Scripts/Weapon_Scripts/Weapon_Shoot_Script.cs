@@ -73,7 +73,7 @@ namespace AZE.AdvancedFirstPerson
                             
                 GameObject x =Instantiate(bulletPrefab, weapon.transform.position, camera.transform.rotation * Angle_Spread);
                 bulletrb = x.GetComponent<Rigidbody>();
-                bulletrb.linearVelocity = bulletSpeed * camera.transform.forward ;
+                bulletrb.linearVelocity = bulletSpeed * weapon.transform.forward ;
                             
                             
             }
