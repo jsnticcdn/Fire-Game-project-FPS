@@ -16,7 +16,9 @@ namespace AZE.AdvancedFirstPerson
         
         public Quaternion Angle_Spread;
         private float did_click_shoot;
-        
+
+
+
         public float bulletSpeed;
         public float fire_rate = 1.0f;
         private float bullet_delay = 0;
@@ -61,7 +63,6 @@ namespace AZE.AdvancedFirstPerson
         
         void Shoot()
         {
-            
             for (int i = 0; i < bullets_per_shot; i++)
             {
                 Angle_Spread = new Quaternion(
