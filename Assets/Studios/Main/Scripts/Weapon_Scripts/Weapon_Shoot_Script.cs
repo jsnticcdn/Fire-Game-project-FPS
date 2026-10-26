@@ -12,16 +12,21 @@ namespace AZE.AdvancedFirstPerson
         public Rigidbody bulletrb;
         public InputAction Click_Shoot;
         public Idle_Weapon_Script idlescript;
-        
+
+        public float[] minvals = { 0, 0, 0, 0 };
+        public float[] maxvals = { 0, 0, 0, 0 };
         
         public Quaternion Angle_Spread;
-        private float did_click_shoot;
         
+        
+        private float did_click_shoot;
         public float bulletSpeed;
         public float fire_rate = 1.0f;
         private float bullet_delay = 0;
         public int bullets_per_shot = 5;
-        public float[] Angle_Spread_Range = { 0, 360, 0, 360, 0, 360, 0, 360 };
+        
+        private float time = 0;
+        public float recoil_force = 1.0f;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -34,6 +39,7 @@ namespace AZE.AdvancedFirstPerson
         {
             bullet_delay += Time.deltaTime;
             did_click_shoot = Click_Shoot.ReadValue<float>();
+            
             
  
         }
@@ -64,20 +70,27 @@ namespace AZE.AdvancedFirstPerson
             
             for (int i = 0; i < bullets_per_shot; i++)
             {
-                Angle_Spread = new Quaternion(
-                    Random.Range(Angle_Spread_Range[0], Angle_Spread_Range[1]), 
-                    Random.Range(Angle_Spread_Range[2], Angle_Spread_Range[3]),
-                    Random.Range(Angle_Spread_Range[4], Angle_Spread_Range[5]), 
-                    Random.Range(Angle_Spread_Range[6], Angle_Spread_Range[7]));
-                            
+               Spread_Bullet_Angles();
+
                 GameObject x =Instantiate(bulletPrefab, weapon.transform.position, camera.transform.rotation * Angle_Spread);
+               
+                x.transform.Rotate(Angle_Spread.eulerAngles);
                 bulletrb = x.GetComponent<Rigidbody>();
+                
                 bulletrb.linearVelocity = bulletSpeed * weapon.transform.forward ;
                             
                             
             }
+
             bullet_delay = 0;
             
         }
+
+        void Spread_Bullet_Angles()
+        {
+            Angle_Spread = new Quaternion(Random.Range(minvals[0],maxvals[0]),Random.Range(minvals[1],maxvals[1]),Random.Range(minvals[2],maxvals[02]),Random.Range(minvals[3],maxvals[3]));
+        }
+
+
     }
 }
