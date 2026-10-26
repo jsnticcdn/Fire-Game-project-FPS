@@ -964,6 +964,7 @@ GameObject:
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
+  - component: {fileID: 330585549}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1039,7 +1040,11 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< HEAD
+  m_LocalPosition: {x: 0.39200002, y: 1.544, z: -0.044}
+=======
   m_LocalPosition: {x: 0.349, y: 1.65, z: -0.251}
+>>>>>>> f59e6975203ee44e9258f016725b514bcdf5bab3
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1089,6 +1094,36 @@ MonoBehaviour:
       m_PostInfinity: 2
       m_RotationOrder: 4
   CustomBlends: {fileID: 0}
+--- !u!114 &330585549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330585543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca7de3aefa901374ba29464584a3109a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineDecollider
+  CameraRadius: 0.4
+  Decollision:
+    Enabled: 0
+    ObstacleLayers:
+      serializedVersion: 2
+      m_Bits: 1
+    UseFollowTarget:
+      Enabled: 0
+      YOffset: 0
+    Damping: 0.5
+    SmoothingTime: 0
+  TerrainResolution:
+    Enabled: 1
+    TerrainLayers:
+      serializedVersion: 2
+      m_Bits: 1
+    MaximumRaycast: 10
+    Damping: 0.5
 --- !u!1 &341487207
 GameObject:
   m_ObjectHideFlags: 0
@@ -3056,7 +3091,7 @@ GameObject:
   - component: {fileID: 1344974710}
   - component: {fileID: 1344974714}
   m_Layer: 0
-  m_Name: Spawner_Temp
+  m_Name: Temporary_Spawner
   m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3177,6 +3212,13 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1890999829041139612, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
+<<<<<<< HEAD
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1890999829041139612, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
+=======
+>>>>>>> f59e6975203ee44e9258f016725b514bcdf5bab3
       propertyPath: m_Materials.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -3197,8 +3239,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3026558084801926804, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
+<<<<<<< HEAD
+      propertyPath: m_LocalPosition.x
+      value: 0.043
+      objectReference: {fileID: 0}
+    - target: {fileID: 3026558084801926804, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.544
+      objectReference: {fileID: 0}
+    - target: {fileID: 3026558084801926804, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
+=======
+>>>>>>> f59e6975203ee44e9258f016725b514bcdf5bab3
       propertyPath: m_LocalPosition.z
-      value: -0.251
+      value: -0.044
       objectReference: {fileID: 0}
     - target: {fileID: 3408190698196073221, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       propertyPath: crouchMode
@@ -3276,6 +3329,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 9149231291392023630, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
+      propertyPath: CollideAgainst.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 9149231291392023630, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
+      propertyPath: MinimumDistanceFromTarget
+      value: 0.01
+      objectReference: {fileID: 0}
     - target: {fileID: 9159471293141378096, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       propertyPath: UseSlide
       value: 1
@@ -3317,10 +3378,17 @@ PrefabInstance:
       addedObject: {fileID: 376678438}
     - targetCorrespondingSourceObject: {fileID: 8657692997353891807, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       insertIndex: -1
+<<<<<<< HEAD
+      addedObject: {fileID: 376678453}
+    - targetCorrespondingSourceObject: {fileID: 3760198177314414978, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1603489239}
+=======
       addedObject: {fileID: 376678445}
     - targetCorrespondingSourceObject: {fileID: 8657692997353891807, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
       insertIndex: -1
       addedObject: {fileID: 376678446}
+>>>>>>> f59e6975203ee44e9258f016725b514bcdf5bab3
   m_SourcePrefab: {fileID: 100100000, guid: 5605c5e2add104149bb0417f609ee3df, type: 3}
 --- !u!1 &1445462743 stripped
 GameObject:
@@ -3814,37 +3882,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9dfa5b682dcd46bda6128250e975f58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCamera
---- !u!1 &1624348528
-GameObject:
+--- !u!114 &1603489239
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1624348529}
-  m_Layer: 0
-  m_Name: Walls
-  m_TagString: Wall
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1624348529
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624348528}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.99674, y: -0, z: -0.2587}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1445462743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44d70cc20219cd84593f67d248eafe36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.Cinemachine::Unity.Cinemachine.CinemachineCameraOffset
+  Offset: {x: 0, y: 0, z: 0}
+  ApplyAfter: 1
+  PreserveComposition: 1
 --- !u!1 &1662291070
 GameObject:
   m_ObjectHideFlags: 0
@@ -4105,6 +4157,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2757515425554521065, guid: 18ed34909a5963549818588ec1469d5e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2800797415068966835, guid: 18ed34909a5963549818588ec1469d5e, type: 3}
       propertyPath: camera
       value: 
@@ -4178,6 +4234,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1445462743}
     - target: {fileID: 6272574694138890215, guid: 18ed34909a5963549818588ec1469d5e, type: 3}
+<<<<<<< HEAD
+      propertyPath: bulletSpeed
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272574694138890215, guid: 18ed34909a5963549818588ec1469d5e, type: 3}
+      propertyPath: Angle_Spread.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272574694138890215, guid: 18ed34909a5963549818588ec1469d5e, type: 3}
+      propertyPath: Angle_Spread.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272574694138890215, guid: 18ed34909a5963549818588ec1469d5e, type: 3}
+      propertyPath: Angle_Spread.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272574694138890215, guid: 18ed34909a5963549818588ec1469d5e, type: 3}
+      propertyPath: Angle_Spread.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272574694138890215, guid: 18ed34909a5963549818588ec1469d5e, type: 3}
+      propertyPath: bullets_per_shot
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272574694138890215, guid: 18ed34909a5963549818588ec1469d5e, type: 3}
+=======
+>>>>>>> f59e6975203ee44e9258f016725b514bcdf5bab3
       propertyPath: 'Angle_Spread_Range.Array.data[0]'
       value: -100
       objectReference: {fileID: 0}
@@ -4835,7 +4918,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1926802498}
   m_Layer: 0
-  m_Name: Pilars
+  m_Name: Pillars
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5093,7 +5176,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2006055906}
   m_Layer: 0
-  m_Name: Plataforms
+  m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5653,15 +5736,14 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 1212363551}
-  - {fileID: 1624348529}
+  - {fileID: 497422116}
   - {fileID: 774610554}
   - {fileID: 341487208}
   - {fileID: 1926802498}
   - {fileID: 2006055906}
-  - {fileID: 1397395136}
   - {fileID: 1677378939}
+  - {fileID: 1397395136}
   - {fileID: 1344974713}
-  - {fileID: 497422116}
   - {fileID: 6696273791060899126}
   - {fileID: 1729973390}
   - {fileID: 1763591070}
