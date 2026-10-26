@@ -9,7 +9,7 @@ namespace AZE.AdvancedFirstPerson
         public GameObject bulletPrefab;
         public GameObject camera;
         public GameObject weapon;
-        public Rigidbody bulletrb;
+        public Rigidbody bulletrb;+*/
         public InputAction Click_Shoot;
         public Idle_Weapon_Script idlescript;
 
