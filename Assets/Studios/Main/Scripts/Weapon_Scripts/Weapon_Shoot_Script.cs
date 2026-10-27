@@ -9,7 +9,7 @@ namespace AZE.AdvancedFirstPerson
         public GameObject bulletPrefab;
         public GameObject camera;
         public GameObject weapon;
-        public Rigidbody bulletrb;+*/
+        public Rigidbody bulletrb;
         public InputAction Click_Shoot;
         public Idle_Weapon_Script idlescript;
 
@@ -70,13 +70,14 @@ namespace AZE.AdvancedFirstPerson
             
             for (int i = 0; i < bullets_per_shot; i++)
             {
-               Spread_Bullet_Angles();
-
-                GameObject x =Instantiate(bulletPrefab, weapon.transform.position, camera.transform.rotation * Angle_Spread);
-               
-                x.transform.Rotate(Angle_Spread.eulerAngles);
-                bulletrb = x.GetComponent<Rigidbody>();
                 
+                Spread_Bullet_Angles();
+                GameObject x =Instantiate(bulletPrefab, weapon.transform.position, camera.transform.rotation * Angle_Spread);
+                Spread_Bullet_Angles();
+                x.transform.Rotate(Angle_Spread.eulerAngles);
+                
+                
+                bulletrb = x.GetComponent<Rigidbody>();
                 bulletrb.linearVelocity = bulletSpeed * weapon.transform.forward ;
                             
                             
