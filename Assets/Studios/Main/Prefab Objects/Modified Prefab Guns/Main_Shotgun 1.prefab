@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3618721780891427002
+--- !u!1 &8492469562081170856
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,10 +8,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4716914332630995118}
-  - component: {fileID: 5791962178971128108}
-  - component: {fileID: 5281874015392639945}
-  - component: {fileID: 7680701312789963369}
+  - component: {fileID: 8721925659059965274}
+  - component: {fileID: 3915551932652638667}
+  - component: {fileID: 1221650482267126653}
+  - component: {fileID: 2003176674341152937}
   m_Layer: 0
   m_Name: Aim_Point
   m_TagString: Untagged
@@ -19,36 +19,36 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4716914332630995118
+--- !u!4 &8721925659059965274
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3618721780891427002}
+  m_GameObject: {fileID: 8492469562081170856}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.0004, y: 0.0421, z: 0.371}
+  m_LocalPosition: {x: 0.101, y: 0.0421, z: 0.371}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4564280806615554751}
+  m_Father: {fileID: 1062045107200866197}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5791962178971128108
+--- !u!33 &3915551932652638667
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3618721780891427002}
+  m_GameObject: {fileID: 8492469562081170856}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &5281874015392639945
+--- !u!23 &1221650482267126653
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3618721780891427002}
+  m_GameObject: {fileID: 8492469562081170856}
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -91,13 +91,13 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &7680701312789963369
+--- !u!65 &2003176674341152937
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3618721780891427002}
+  m_GameObject: {fileID: 8492469562081170856}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -112,7 +112,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1001 &8122745901611299297
+--- !u!1001 &4707241341516455115
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -122,7 +122,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4946517846798201316, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_Name
-      value: Main_Shotgun
+      value: Main_Shotgun 1
       objectReference: {fileID: 0}
     - target: {fileID: 4946517846798201316, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_IsActive
@@ -142,15 +142,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.97
+      value: -10.23145
       objectReference: {fileID: 0}
     - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.478
+      value: 0.76
       objectReference: {fileID: 0}
     - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 6.09
+      value: -3.1737
       objectReference: {fileID: 0}
     - target: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       propertyPath: m_LocalRotation.w
@@ -180,32 +180,36 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6268276172780169736, guid: ba0174561474fd04897df5301479e9cb, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 4716914332630995118}
+      addedObject: {fileID: 8721925659059965274}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4946517846798201316, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2800797415068966835}
+      addedObject: {fileID: 8564332065710927447}
     - targetCorrespondingSourceObject: {fileID: 4946517846798201316, guid: ba0174561474fd04897df5301479e9cb, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6272574694138890215}
+      addedObject: {fileID: 9023990375023834061}
   m_SourcePrefab: {fileID: 100100000, guid: ba0174561474fd04897df5301479e9cb, type: 3}
---- !u!1 &3754952719727869957 stripped
+--- !u!1 &429799960676298031 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4946517846798201316, guid: ba0174561474fd04897df5301479e9cb, type: 3}
-  m_PrefabInstance: {fileID: 8122745901611299297}
+  m_PrefabInstance: {fileID: 4707241341516455115}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2800797415068966835
+--- !u!114 &8564332065710927447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3754952719727869957}
+  m_GameObject: {fileID: 429799960676298031}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 47458e1c397964842a15b17d99f70116, type: 3}
@@ -252,16 +256,16 @@ MonoBehaviour:
   camera: {fileID: 0}
   isparent: 0
   Weapon_Cap_Check: {fileID: 0}
-  gunPosition: {x: 1.7, y: -0.8, z: 2.5}
-  equippedScaleMultiplier: 1.6
+  gunPosition: {x: 0.1, y: -0.03, z: 0.13}
+  equippedScaleMultiplier: 0.07
   pickedup: 0
---- !u!114 &6272574694138890215
+--- !u!114 &9023990375023834061
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3754952719727869957}
+  m_GameObject: {fileID: 429799960676298031}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1fb93ffb0accb5d4fa5a2888cb765887, type: 3}
@@ -269,7 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: AZE.AdvancedFirstPerson::AZE.AdvancedFirstPerson.Weapon_Shoot_Script
   bulletPrefab: {fileID: 2310230697167730238, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
   camera: {fileID: 0}
-  weapon: {fileID: 3618721780891427002}
+  weapon: {fileID: 8492469562081170856}
   bulletrb: {fileID: 9162342564685351763, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
   Click_Shoot:
     m_Name: Click_Shoot
@@ -289,22 +293,24 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
-  idlescript: {fileID: 2800797415068966835}
-  Angle_Spread: {x: 0, y: 0, z: 0, w: 0}
-  bulletSpeed: 80
+  idlescript: {fileID: 8564332065710927447}
+  minvals:
+  - 8
+  - 8
+  - 8
+  - 8
+  maxvals:
+  - 10
+  - 10
+  - 10
+  - 10
+  Angle_Spread: {x: 0, y: 0, z: 0, w: 1}
+  bulletSpeed: 100
   fire_rate: 0.5
-  bullets_per_shot: 8
-  Angle_Spread_Range:
-  - 0
-  - 360
-  - 0
-  - 360
-  - 0
-  - 360
-  - 0
-  - 360
---- !u!4 &4564280806615554751 stripped
+  bullets_per_shot: 20
+  recoil_force: 1
+--- !u!4 &1062045107200866197 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5759645884593285982, guid: ba0174561474fd04897df5301479e9cb, type: 3}
-  m_PrefabInstance: {fileID: 8122745901611299297}
+  m_PrefabInstance: {fileID: 4707241341516455115}
   m_PrefabAsset: {fileID: 0}

@@ -12,7 +12,9 @@ namespace AZE.AdvancedFirstPerson
         public Rigidbody bulletrb;
         public InputAction Click_Shoot;
         public Idle_Weapon_Script idlescript;
-        
+
+        public float[] minvals = { 0, 0, 0, 0 };
+        public float[] maxvals = { 0, 0, 0, 0 };
         
         public Quaternion Angle_Spread;
         public float did_click_shoot;
@@ -36,6 +38,7 @@ namespace AZE.AdvancedFirstPerson
         {
             bullet_delay += Time.deltaTime;
             did_click_shoot = Click_Shoot.ReadValue<float>();
+            
             
  
         }
@@ -65,20 +68,28 @@ namespace AZE.AdvancedFirstPerson
         {
             for (int i = 0; i < bullets_per_shot; i++)
             {
-                Angle_Spread = new Quaternion(
-                    Random.Range(Angle_Spread_Range[0], Angle_Spread_Range[1]), 
-                    Random.Range(Angle_Spread_Range[2], Angle_Spread_Range[3]),
-                    Random.Range(Angle_Spread_Range[4], Angle_Spread_Range[5]), 
-                    Random.Range(Angle_Spread_Range[6], Angle_Spread_Range[7]));
-                            
+                
+                Spread_Bullet_Angles();
                 GameObject x =Instantiate(bulletPrefab, weapon.transform.position, camera.transform.rotation * Angle_Spread);
+                Spread_Bullet_Angles();
+                x.transform.Rotate(Angle_Spread.eulerAngles);
+                
+                
                 bulletrb = x.GetComponent<Rigidbody>();
                 bulletrb.linearVelocity = bulletSpeed * weapon.transform.forward ;
                             
                             
             }
+
             bullet_delay = 0;
             
         }
+
+        void Spread_Bullet_Angles()
+        {
+            Angle_Spread = new Quaternion(Random.Range(minvals[0],maxvals[0]),Random.Range(minvals[1],maxvals[1]),Random.Range(minvals[2],maxvals[02]),Random.Range(minvals[3],maxvals[3]));
+        }
+
+
     }
 }
