@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Serialization;
@@ -91,31 +90,7 @@ namespace AZE.AdvancedFirstPerson.Studios.Main.Scripts.Shared
             {
                 m_IsDead = true;
                 OnDie?.Invoke();
-                Destroy(gameObject);
             }
         }
-        
-        
-
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Bullet"))
-            {
-                if (maxHealth <= 0)
-                {
-                    HandleDeath();
-                    Destroy(other.gameObject);
-                }
-                else
-                {
-                    TakeDamage(10f, other.gameObject);
-                    maxHealth -= 10f;
-                   
-                    
-                }
-                
-            }
-        }
-        
     }
 }
