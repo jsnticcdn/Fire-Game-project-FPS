@@ -25,7 +25,9 @@ namespace AZE.AdvancedFirstPerson
         public float fire_rate = 1.0f;
         private float bullet_delay = 0;
         public int bullets_per_shot = 5;
-        public float[] Angle_Spread_Range = { 0, 360, 0, 360, 0, 360, 0, 360 };
+        
+        private float time = 0;
+        public float recoil_force = 1.0f;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
