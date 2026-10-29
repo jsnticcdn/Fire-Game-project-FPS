@@ -1,11 +1,5 @@
 {
     "m_Dictionary": {
-<<<<<<< HEAD
-<<<<<<< HEAD
-        "m_DictionaryValues": []
-=======
-=======
->>>>>>> parent of 3f0f117 (Revert "adding new animations modified enemy code")
         "m_DictionaryValues": [
             {
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
@@ -100,11 +94,7 @@
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize.Cube",
-                "value": "{\"m_Value\":{\"x\":1.0,\"y\":3.25,\"z\":-1.25}}"
-<<<<<<< HEAD
-=======
                 "value": "{\"m_Value\":{\"x\":21.75,\"y\":4.25,\"z\":26.5}}"
->>>>>>> parent of 3f0f117 (Revert "adding new animations modified enemy code")
             },
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -134,25 +124,12 @@
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize.Sphere",
-                "value": "{\"m_Value\":{\"x\":1.0,\"y\":1.75,\"z\":1.5}}"
-<<<<<<< HEAD
-=======
                 "value": "{\"m_Value\":{\"x\":-9.5,\"y\":11.25,\"z\":-9.25}}"
->>>>>>> parent of 3f0f117 (Revert "adding new animations modified enemy code")
             },
             {
                 "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastSize.Prism",
-                "value": "{\"m_Value\":{\"x\":17.25,\"y\":30.25,\"z\":30.25}}"
-            },
-            {
-                "type": "UnityEngine.Vector3, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-                "key": "ShapeBuilder.LastSize.Cone",
-                "value": "{\"m_Value\":{\"x\":18.25,\"y\":18.75,\"z\":23.75}}"
-<<<<<<< HEAD
-=======
                 "value": "{\"m_Value\":{\"x\":-40.25,\"y\":26.5,\"z\":-19.25}}"
->>>>>>> parent of 3f0f117 (Revert "adding new animations modified enemy code")
             },
             {
                 "type": "UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
@@ -192,11 +169,6 @@
             {
                 "type": "UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.LastRotation.Prism",
-                "value": "{\"m_Value\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0}}"
-            },
-            {
-                "type": "UnityEngine.Quaternion, UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-                "key": "ShapeBuilder.LastRotation.Cone",
                 "value": "{\"m_Value\":{\"x\":0.0,\"y\":0.0,\"z\":0.0,\"w\":1.0}}"
             },
             {
@@ -242,11 +214,6 @@
             {
                 "type": "UnityEngine.ProBuilder.PivotLocation, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "ShapeBuilder.PivotLocation.Prism",
-                "value": "{\"m_Value\":0}"
-            },
-            {
-                "type": "UnityEngine.ProBuilder.PivotLocation, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-                "key": "ShapeBuilder.PivotLocation.Cone",
                 "value": "{\"m_Value\":0}"
             },
             {
@@ -310,11 +277,6 @@
                 "value": "{}"
             },
             {
-                "type": "UnityEngine.ProBuilder.Shapes.Shape, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
-                "key": "ShapeBuilder.Cone",
-                "value": "{}"
-            },
-            {
                 "type": "UnityEngine.ProBuilder.RectSelectMode, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "editor.dragSelectRectMode",
                 "value": "{\"m_Value\":0}"
@@ -325,9 +287,5 @@
                 "value": "{\"m_Value\":0}"
             }
         ]
-<<<<<<< HEAD
->>>>>>> parent of 2647267 (Update Settings.json)
-=======
->>>>>>> parent of 3f0f117 (Revert "adding new animations modified enemy code")
     }
 }
