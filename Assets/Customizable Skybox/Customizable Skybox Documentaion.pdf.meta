@@ -1,14 +1,7 @@
 fileFormatVersion: 2
-guid: 631feaddbe683ed4383934ae4201e481
+guid: 0bfb7c2048271884f84d355b09452277
 DefaultImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 174576
-  packageName: Customizable skybox
-  packageVersion: 1.0
-  assetPath: Assets/Customizable Skybox/Customizable Skybox Documentaion.pdf
-  uploadId: 378796
