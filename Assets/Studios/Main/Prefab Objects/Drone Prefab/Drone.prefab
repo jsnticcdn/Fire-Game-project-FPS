@@ -296,12 +296,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 100000, guid: 28723f10c2a8e094a9351e892f5271b8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4195024552440832630}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 28723f10c2a8e094a9351e892f5271b8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6409953375841940951}
-    - targetCorrespondingSourceObject: {fileID: 100000, guid: 28723f10c2a8e094a9351e892f5271b8, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3136270557322000634}
   m_SourcePrefab: {fileID: 100100000, guid: 28723f10c2a8e094a9351e892f5271b8, type: 3}
 --- !u!4 &6344612964349441012 stripped
 Transform:
@@ -327,17 +321,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: AZE.AdvancedFirstPerson::Drone_Script
   aimSphere1: {fileID: 8655039534462357623}
   aimSphere2: {fileID: 6950871443827756747}
-  bulletPrefab: {fileID: 5403337897654812567, guid: c2cfa8bb94de1114d982bb20bc91f1e9, type: 3}
+  bulletPrefab: {fileID: 2310230697167730238, guid: 7ecf2dfd84a70804d8c641982b2166c1, type: 3}
   viewRange: 25
   wanderRadius: 10
   wanderHeight: 3
   flySpeed: 3
-  attackFlySpeed: 2
   wanderTimeout: 6
   turnSpeed: 90
-  lookAroundTime: 4
-  lookAngle: 100
-  lookSpeed: 1.5
   lockOnTime: 1
   laserTime: 1
   shotsInBurst: 4
@@ -375,39 +365,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6409953375841940951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6344612964349603796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c34aee193170a14b985856c7dd96763, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: AZE.AdvancedFirstPerson::AZE.AdvancedFirstPerson.Studios.Main.Scripts.Shared.Health
-  maxHealth: 120
-  criticalHealthRatio: 20
-  Alt_Health: 200
---- !u!65 &3136270557322000634
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6344612964349603796}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 3.575495, y: 3.303447, z: 3.9624014}
-  m_Center: {x: -0.00000005960464, y: 0.17677669, z: 0.00000011920928}
