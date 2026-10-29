@@ -7,7 +7,7 @@ namespace AZE.AdvancedFirstPerson
         private float time = 0;
 
         private float maxenemies = 8;
-        private Vector3 offset = new Vector3(5, 5, 5);
+        private Vector3 offset = new Vector3(1, .5f, 1);
         public GameObject enemy;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
