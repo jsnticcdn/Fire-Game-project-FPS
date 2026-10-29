@@ -13,6 +13,7 @@ namespace AZE.AdvancedFirstPerson.Studios.Main.Scripts.Shared
         [Tooltip("Health ratio at which the critical health vignette starts appearing")]
         public float criticalHealthRatio = 0.3f;
 
+        public float Alt_Health = 200;
         UnityAction<float, GameObject> OnDamaged;
         public UnityAction<float> OnHealed;
         public UnityAction OnDie;
@@ -90,6 +91,22 @@ namespace AZE.AdvancedFirstPerson.Studios.Main.Scripts.Shared
             {
                 m_IsDead = true;
                 OnDie?.Invoke();
+            }
+        }
+
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.CompareTag("Bullet"))
+            {
+                Alt_Health -= 5;
+                Destroy(other.gameObject);
+                if (Alt_Health <= 0f)
+                {
+                    Kill();
+                    Destroy(gameObject);
+                    Destroy(other.gameObject);
+                }
+                
             }
         }
     }
