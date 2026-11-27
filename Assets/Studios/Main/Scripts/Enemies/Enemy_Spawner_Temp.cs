@@ -4,9 +4,10 @@ namespace AZE.AdvancedFirstPerson
 {
     public class Enemy_Spawner_Temp : MonoBehaviour
     {
-        private float time = 0;
-
-        private float maxenemies = 8;
+        public float time = 0;
+        public float cooldown = 10;
+        public float count = -8;
+        public float maxenemies = 8;
         private Vector3 offset = new Vector3(1.5f, .5f, 1.5f);
         public GameObject enemy;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,18 +20,27 @@ namespace AZE.AdvancedFirstPerson
         void Update()
         {
             time += Time.deltaTime;
-            if (time > 5)
+           
+        
+        }
+
+        void FixedUpdate()
+        {
+            if (time >= cooldown)
             {
-                if (maxenemies > 0)
+                time = 0;
+                if (count < maxenemies)
                 {
                     
                     Instantiate(enemy, transform.position + offset, transform.rotation);
                     time = 0;
+                    count++;
                     
                 }
                 
+                
             }
-        
+            
         }
     }
 }

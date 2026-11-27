@@ -1,16 +1,13 @@
+using System;
 using UnityEngine;
 
 namespace AZE.AdvancedFirstPerson
 {
     public class Camera_Facer : MonoBehaviour
     {
-        public GameObject Playere;
-        public MaxCrabScript max_crabplayerdetect;
         public bool Lock_Y_Rotation = false;
-        
-        public bool forcrabscript;
-        private bool isdetected;
-        public bool forany;
+        private bool Player_Detected = false;
+        private GameObject player;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -20,73 +17,51 @@ namespace AZE.AdvancedFirstPerson
         // Update is called once per frame
         void Update()
         {
-            try
-            {
-                isdetected = max_crabplayerdetect.Player_Detected;
-            }
-            catch
-            {
-                Debug.Log(".");
-            }
             
-            if (isdetected)
+            if (Lock_Y_Rotation)
             {
-                Playere = max_crabplayerdetect.player;
+                transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
             }
-            if (forcrabscript)
-            {
-                if (isdetected)
-                {
-                    transform.LookAt(Playere.transform, Vector3.up);
-                    if (Lock_Y_Rotation)
-                    {
-                        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
-                    }
           
-                    transform.Rotate(transform.up, 90 * Time.deltaTime);
-                    if (transform.rotation.eulerAngles.x < -20)
-                    {
-                        transform.eulerAngles = new Vector3(-20, transform.eulerAngles.y, transform.eulerAngles.z);
-                
-                    }
-                    
-                }
-                
-               
-                
-            }
-            else if (forany)
-            {
-                
-                if (isdetected)
-                {
-                    transform.LookAt(Playere.transform, Vector3.up);
-                    if (Lock_Y_Rotation)
-                    {
-                        transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
-                    }
-          
-                    transform.Rotate(transform.up, 90 * Time.deltaTime);
-                    if (transform.rotation.eulerAngles.x < -20)
-                    {
-                        transform.eulerAngles = new Vector3(-20, transform.eulerAngles.y, transform.eulerAngles.z);
-                
-                    }
-                    
-                }
-                
-            }
-            else
-            {
-                return;
-            }
-           
             
-           
-            
-           
+            if (transform.rotation.eulerAngles.x < -20)
+            {
+                transform.eulerAngles = new Vector3(-20, transform.eulerAngles.y, transform.eulerAngles.z);
+                
+            }
            
         
+        }
+
+        private void FixedUpdate()
+        {
+            if (Player_Detected)
+            {
+                transform.LookAt(player.transform, Vector3.up);
+            }
+        }
+
+
+        private void OnTriggerStay(Collider other)
+        {
+            
+                if (other.gameObject.CompareTag("Actual_Player"))
+                {
+                   
+                    player = other.gameObject;
+                    Player_Detected = true;
+                    transform.LookAt(player.transform, Vector3.up);
+                }
+                else
+                {
+                   
+                    Player_Detected = false;
+                    player = null;
+                    transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
+                }
+                
+            
+           
         }
     }
 }
